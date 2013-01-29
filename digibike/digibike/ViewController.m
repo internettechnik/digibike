@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)InfoButton:(UIButton *)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Infos zu DigiBike"
+    message:@"Infos zum Projekt DigiBike erhältst du unter https://github.com/internettechnik/digibike. "
+    delegate:nil
+    cancelButtonTitle:@"OK"
+    otherButtonTitles:@"Info", nil];
+    [alert show];
+    
+    
+}
 @end
