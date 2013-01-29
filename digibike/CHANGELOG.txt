@@ -4,3 +4,5 @@ CHANGELOG:
     => multiple developer work together via github
 
 2013-01-28 setup ok (gratuliere, super!)
+
+2013-01-29 add one button for Info; not finished yet
