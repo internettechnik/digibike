@@ -20,8 +20,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="86" id="Gw7-i2-SbL"/>
-                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="75" id="kfb-Hi-fNm"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="77" id="CN8-mR-mdm"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="94" id="JEr-uB-DnU"/>
                         </constraints>
                     </view>
                 </viewController>
