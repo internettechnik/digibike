@@ -1,5 +1,30 @@
 CHANGELOG:
 
+
+2013-01-29 We invent an EBike :)
+    create some structure for an app
+        (/Sources/Classes/Application/Model,View,Controller)
+        model-view-controller
+    create class EBike (EBike.h and EBike.m)
+        based on "base-class" NSObject
+    test class EBike
+        writing test-methods in digibikeTest.m
+
+
+2013-01-29 
+    Idea:
+       a) watch: iTunesU, "Coding Together" from Stanford
+             Developing Apps for iPhone and iPad (Winter 2013)
+       b) join: "coding together" at piazza.com
+            https://piazza.com/class#winter2013/codingtogetherios6
+    ad a)
+        watch from minutes 37: 
+            add class "EBike"
+                how does it behave? = "API" => create *.h
+                internal implementation => create *.m
+    also compare to existing demo-projects
+        see: http://developer.apple.com/samplecode/
+
 2013-01-28 minor changes to project-file
     => multiple developer work together via github
 

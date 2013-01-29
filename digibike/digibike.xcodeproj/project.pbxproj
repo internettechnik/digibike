@@ -24,6 +24,7 @@
 		3D181D6316B679340088159F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D181D6116B679340088159F /* InfoPlist.strings */; };
 		3D181D6616B679340088159F /* digibikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D181D6516B679340088159F /* digibikeTests.m */; };
 		5210B0CB16B6BB610096F7B6 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */; };
+		5289CEA816B880FF00AF5D4D /* EBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289CEA716B880FF00AF5D4D /* EBike.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		3D181D6416B679340088159F /* digibikeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = digibikeTests.h; sourceTree = "<group>"; };
 		3D181D6516B679340088159F /* digibikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = digibikeTests.m; sourceTree = "<group>"; };
 		5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		5289CEA616B880FF00AF5D4D /* EBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBike.h; sourceTree = "<group>"; };
+		5289CEA716B880FF00AF5D4D /* EBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBike.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 		3D181D2516B679340088159F = {
 			isa = PBXGroup;
 			children = (
+				5289CEA016B8806800AF5D4D /* Sources */,
 				5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */,
 				3D181D3A16B679340088159F /* digibike */,
 				3D181D5E16B679340088159F /* digibikeTests */,
@@ -161,6 +165,58 @@
 				3D181D6116B679340088159F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5289CEA016B8806800AF5D4D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5289CEA116B8806800AF5D4D /* Classes */,
+			);
+			name = Sources;
+			path = digibike/Sources;
+			sourceTree = "<group>";
+		};
+		5289CEA116B8806800AF5D4D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5289CEA216B8806800AF5D4D /* Application */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5289CEA216B8806800AF5D4D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5289CEA516B8808A00AF5D4D /* View */,
+				5289CEA416B8808A00AF5D4D /* Controller */,
+				5289CEA316B8806800AF5D4D /* Model */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5289CEA316B8806800AF5D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5289CEA616B880FF00AF5D4D /* EBike.h */,
+				5289CEA716B880FF00AF5D4D /* EBike.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5289CEA416B8808A00AF5D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = Model/Controller;
+			sourceTree = "<group>";
+		};
+		5289CEA516B8808A00AF5D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = Model/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +333,7 @@
 				3D181D4116B679340088159F /* main.m in Sources */,
 				3D181D4516B679340088159F /* AppDelegate.m in Sources */,
 				3D181D5116B679340088159F /* ViewController.m in Sources */,
+				5289CEA816B880FF00AF5D4D /* EBike.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
