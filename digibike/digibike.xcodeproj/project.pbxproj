@@ -23,6 +23,7 @@
 		3D181D5B16B679340088159F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D181D3616B679340088159F /* Foundation.framework */; };
 		3D181D6316B679340088159F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D181D6116B679340088159F /* InfoPlist.strings */; };
 		3D181D6616B679340088159F /* digibikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D181D6516B679340088159F /* digibikeTests.m */; };
+		5210B0CB16B6BB610096F7B6 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		3D181D6216B679340088159F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3D181D6416B679340088159F /* digibikeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = digibikeTests.h; sourceTree = "<group>"; };
 		3D181D6516B679340088159F /* digibikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = digibikeTests.m; sourceTree = "<group>"; };
+		5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		3D181D2516B679340088159F = {
 			isa = PBXGroup;
 			children = (
+				5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */,
 				3D181D3A16B679340088159F /* digibike */,
 				3D181D5E16B679340088159F /* digibikeTests */,
 				3D181D3316B679340088159F /* Frameworks */,
@@ -236,6 +239,7 @@
 				3D181D4916B679340088159F /* Default@2x.png in Resources */,
 				3D181D4B16B679340088159F /* Default-568h@2x.png in Resources */,
 				3D181D4E16B679340088159F /* MainStoryboard.storyboard in Resources */,
+				5210B0CB16B6BB610096F7B6 /* CHANGELOG.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +335,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Valentin Riegler (NX7ULEM22V)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -347,7 +351,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "6447263B-49CF-4902-9D66-AC394DD88773";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -361,7 +365,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Valentin Riegler (NX7ULEM22V)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -370,7 +374,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "6447263B-49CF-4902-9D66-AC394DD88773";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -451,6 +456,7 @@
 				3D181D6B16B679340088159F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D181D6C16B679340088159F /* Build configuration list for PBXNativeTarget "digibikeTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +465,7 @@
 				3D181D6E16B679340088159F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
