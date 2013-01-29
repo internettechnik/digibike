@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3083" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,8 +20,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="77" id="CN8-mR-mdm"/>
-                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="94" id="JEr-uB-DnU"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="2Jj-LD-4o2"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="60" id="DbH-17-lt9"/>
                         </constraints>
                     </view>
                 </viewController>
