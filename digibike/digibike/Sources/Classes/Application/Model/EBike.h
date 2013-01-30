@@ -17,13 +17,20 @@
 // which attributes (properties) has such an EBike?
 
 
-
 // public property (we have getter and setter)
 //     (nonatomic = not thread safe)
 @property (strong, nonatomic) NSString *name;
+@property (nonatomic) int speed;
+@property (nonatomic, getter=isBroken) BOOL broken; // some bikes might be broken (defect)
+
+
+
+// how to init a bike on creation (=when creating a NEW object)
+- (id) initEBikeWithName:(NSString *)theEBikeName;
+
 
 
 // how does it behave?
-- (id) initEBikeWithName:(NSString *)theEBikeName;
+- (void)startTheBike:(int) speed;
 
 @end
