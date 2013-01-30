@@ -13,6 +13,7 @@
 
 @interface EBike : NSObject
 
+
 // which attributes (properties) has such an EBike?
 
 

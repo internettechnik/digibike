@@ -31,7 +31,7 @@
 
 // details about the getter and setter:
 @synthesize name = _name;
-/* so following is internally generated:
+/* so following is internally generated: 
 -(NSString *)name
 {
     return _name;
