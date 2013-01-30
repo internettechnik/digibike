@@ -48,7 +48,7 @@ EBike *ebike;
 {
     EBike *maxiBike;
     maxiBike = [[EBike alloc] initEBikeWithName: @"Maxi"];
-    STAssertEquals(maxiBike.name, @"Maxi", @"we expect this bike to be called 'Maxi'");
+    STAssertEqual(maxiBike.name, @"Maxi", @"we expect this bike to be called 'Maxi'");
     maxiBike=nil;
 }
 
