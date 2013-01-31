@@ -12,4 +12,13 @@
 
 - (IBAction)InfoButton:(UIButton *)sender;
 
+
+// we created a User-Interface Control of type "Label" on the GUI
+// we create now a corresponding element inside the code
+// NOTE: you have to connect the Label on the storyboard
+//       with this Controller-element "statusText":
+//       by CTRL-dragging from View-Controller to the label,
+//       thereby select "statusText"...
+@property (weak, nonatomic) IBOutlet UILabel *statusText;
+
 @end

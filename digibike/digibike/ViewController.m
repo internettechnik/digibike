@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EBike.h"
 
 @interface ViewController ()
 
@@ -14,10 +15,19 @@
 
 @implementation ViewController
 
+@synthesize statusText = _statusText;
+
+EBike *ebike;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    // Do any additional setup after loading the view, typically from a nib.
+    ebike = [[EBike alloc] initEBikeWithName: @"Maxi-Super"];
+    self.statusText.text =  [NSString stringWithFormat:@"I like my %@!" ,ebike.name];
+    NSLog( @"We loaded view, and so we just created another bike named '%@'",ebike.name );
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,10 +39,12 @@
 - (IBAction)InfoButton:(UIButton *)sender {
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Infos zu DigiBike"
-    message:@"Infos zum Projekt DigiBike erhältst du unter https://github.com/internettechnik/digibike. "
-    delegate:nil
-    cancelButtonTitle:@"OK"
-    otherButtonTitles:@"Info", nil];
+        message:@"Infos zum Projekt DigiBike erhältst du unter https://github.com/internettechnik/digibike. "
+        delegate:nil
+        cancelButtonTitle:@"OK"
+        otherButtonTitles:nil, //@"Info",
+        nil
+        ];
     [alert show];
     
     
