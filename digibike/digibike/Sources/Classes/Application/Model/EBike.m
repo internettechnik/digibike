@@ -38,10 +38,13 @@
 // we implement the available properties/attributes of our bike:
 
 // details about the getter and setter:
-@synthesize broken = _broken;
-@synthesize speed = _speed;
 
-@synthesize name = _name;
+//Note @synthesize only needed if we provide "better" getter and setters:
+//@synthesize broken = _broken;
+//@synthesize speed = _speed;
+
+
+@synthesize name = _name; // needed if we provide "better" getter and setters:
 /* so following is internally generated:
 -(NSString *)name
 {

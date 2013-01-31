@@ -24,6 +24,9 @@
 		3D181D6316B679340088159F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D181D6116B679340088159F /* InfoPlist.strings */; };
 		3D181D6616B679340088159F /* digibikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D181D6516B679340088159F /* digibikeTests.m */; };
 		5210B0CB16B6BB610096F7B6 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */; };
+		523CE3F316BAFC57002F0289 /* Vehicles.m in Sources */ = {isa = PBXBuildFile; fileRef = 523CE3F216BAFC57002F0289 /* Vehicles.m */; };
+		523CE3F416BAFC57002F0289 /* Vehicles.m in Sources */ = {isa = PBXBuildFile; fileRef = 523CE3F216BAFC57002F0289 /* Vehicles.m */; };
+		523CE3F716BB0322002F0289 /* vehiclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523CE3F616BB0322002F0289 /* vehiclesTests.m */; };
 		5289CEA816B880FF00AF5D4D /* EBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289CEA716B880FF00AF5D4D /* EBike.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,10 @@
 		3D181D6416B679340088159F /* digibikeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = digibikeTests.h; sourceTree = "<group>"; };
 		3D181D6516B679340088159F /* digibikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = digibikeTests.m; sourceTree = "<group>"; };
 		5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		523CE3F116BAFC57002F0289 /* Vehicles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicles.h; sourceTree = "<group>"; };
+		523CE3F216BAFC57002F0289 /* Vehicles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicles.m; sourceTree = "<group>"; };
+		523CE3F516BB0322002F0289 /* vehiclesTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vehiclesTests.h; path = digibikeTests/vehiclesTests.h; sourceTree = SOURCE_ROOT; };
+		523CE3F616BB0322002F0289 /* vehiclesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vehiclesTests.m; path = digibikeTests/vehiclesTests.m; sourceTree = SOURCE_ROOT; };
 		5289CEA616B880FF00AF5D4D /* EBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBike.h; sourceTree = "<group>"; };
 		5289CEA716B880FF00AF5D4D /* EBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBike.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +158,8 @@
 		3D181D5E16B679340088159F /* digibikeTests */ = {
 			isa = PBXGroup;
 			children = (
+				523CE3F516BB0322002F0289 /* vehiclesTests.h */,
+				523CE3F616BB0322002F0289 /* vehiclesTests.m */,
 				3D181D6416B679340088159F /* digibikeTests.h */,
 				3D181D6516B679340088159F /* digibikeTests.m */,
 				3D181D5F16B679340088159F /* Supporting Files */,
@@ -199,6 +208,8 @@
 			children = (
 				5289CEA616B880FF00AF5D4D /* EBike.h */,
 				5289CEA716B880FF00AF5D4D /* EBike.m */,
+				523CE3F116BAFC57002F0289 /* Vehicles.h */,
+				523CE3F216BAFC57002F0289 /* Vehicles.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +345,7 @@
 				3D181D4516B679340088159F /* AppDelegate.m in Sources */,
 				3D181D5116B679340088159F /* ViewController.m in Sources */,
 				5289CEA816B880FF00AF5D4D /* EBike.m in Sources */,
+				523CE3F316BAFC57002F0289 /* Vehicles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D181D6616B679340088159F /* digibikeTests.m in Sources */,
+				523CE3F416BAFC57002F0289 /* Vehicles.m in Sources */,
+				523CE3F716BB0322002F0289 /* vehiclesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,8 @@
 @property (nonatomic, getter=isBroken) BOOL broken; // some bikes might be broken (defect)
 
 
+// Note: minus "-" for normal instance/object methods
+//       plus  "+" for class methods
 
 // how to init a bike on creation (=when creating a NEW object)
 - (id) initEBikeWithName:(NSString *)theEBikeName;

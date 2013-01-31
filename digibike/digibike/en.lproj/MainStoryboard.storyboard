@@ -18,6 +18,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-dm-GgK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="XcQ-xl-xlM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Info">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,7 +35,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="eBikeStatusLabel" text="Info about the very first ebike" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcQ-sU-sr7">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="o2n-eS-J1I"/>
+                                    <constraint firstAttribute="width" constant="287" id="rH7-kp-n4D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -41,12 +44,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="55" id="85W-sI-Zfg"/>
-                            <constraint firstAttribute="bottom" secondItem="hcQ-sU-sr7" secondAttribute="bottom" constant="32" id="9di-cU-HX0"/>
-                            <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="4lS-Xi-Cxb" secondAttribute="centerX" type="default" id="A8k-YK-EGb"/>
-                            <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="hcQ-sU-sr7" secondAttribute="centerX" type="default" id="RDN-8Z-kza"/>
-                            <constraint firstItem="Qso-dm-GgK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="131" id="whN-gx-AA3"/>
-                            <constraint firstItem="hcQ-sU-sr7" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="x1z-lW-WXe"/>
+                            <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="hcQ-sU-sr7" secondAttribute="centerX" type="default" id="FNZ-KM-2ik"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="centerX" secondItem="Qso-dm-GgK" secondAttribute="centerX" type="default" id="Fad-XJ-mjW"/>
+                            <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="90" id="KtU-sS-SgO"/>
+                            <constraint firstItem="Qso-dm-GgK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="218" id="SYA-Xe-255"/>
+                            <constraint firstAttribute="bottom" secondItem="hcQ-sU-sr7" secondAttribute="bottom" constant="65" id="X1z-a3-hfM"/>
+                            <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="hG4-wK-Avm"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

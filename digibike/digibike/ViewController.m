@@ -7,27 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "Vehicles.h"
 #import "EBike.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 @synthesize statusText = _statusText;
 
-EBike *ebike;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
     // Do any additional setup after loading the view, typically from a nib.
+    EBike *ebike;
     ebike = [[EBike alloc] initEBikeWithName: @"Maxi-Super"];
     self.statusText.text =  [NSString stringWithFormat:@"I like my %@!" ,ebike.name];
     NSLog( @"We loaded view, and so we just created another bike named '%@'",ebike.name );
     
+    Vehicles *vehicles;
+    vehicles = [[Vehicles alloc] init];
+    [vehicles addEBike: ebike];
+    EBike *e = [vehicles selectDefaultBike];
+    NSLog( @"We added bike '%@' to our list of vehicles.",e.name );
 }
 
 - (void)didReceiveMemoryWarning
