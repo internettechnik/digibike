@@ -15,6 +15,16 @@
 
 @implementation ViewController
 
+- (IBAction)flipImage:(UIButton *)bikeImageButton {
+    if (!bikeImageButton.selected){
+        bikeImageButton.selected=YES;
+    }else{
+        bikeImageButton.selected=NO;
+    }
+    
+}
+
+
 @synthesize statusText = _statusText;
 
 - (void)viewDidLoad

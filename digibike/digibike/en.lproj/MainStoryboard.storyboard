@@ -41,14 +41,34 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yq6-ys-XHC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="66t-fY-YOW"/>
+                                    <constraint firstAttribute="height" constant="120" id="9db-K3-0CR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Bike-Image" image="front.jpeg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="back.jpeg"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipImage:" destination="2" eventType="touchUpInside" id="RFB-az-NQB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="hcQ-sU-sr7" secondAttribute="centerX" type="default" id="FNZ-KM-2ik"/>
+                            <constraint firstItem="hcQ-sU-sr7" firstAttribute="centerX" secondItem="Qso-dm-GgK" secondAttribute="centerX" type="default" id="BHQ-et-uFb"/>
                             <constraint firstItem="4lS-Xi-Cxb" firstAttribute="centerX" secondItem="Qso-dm-GgK" secondAttribute="centerX" type="default" id="Fad-XJ-mjW"/>
+                            <constraint firstItem="Qso-dm-GgK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="134" id="GiK-oC-XSt"/>
                             <constraint firstItem="4lS-Xi-Cxb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="90" id="KtU-sS-SgO"/>
-                            <constraint firstItem="Qso-dm-GgK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="218" id="SYA-Xe-255"/>
+                            <constraint firstItem="yq6-ys-XHC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="87" id="VCw-fN-OG6"/>
                             <constraint firstAttribute="bottom" secondItem="hcQ-sU-sr7" secondAttribute="bottom" constant="65" id="X1z-a3-hfM"/>
+                            <constraint firstAttribute="bottom" secondItem="yq6-ys-XHC" secondAttribute="bottom" constant="109" id="ac8-DI-RKb"/>
                             <constraint firstItem="Qso-dm-GgK" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="hG4-wK-Avm"/>
                         </constraints>
                     </view>
@@ -64,6 +84,10 @@
             <point key="canvasLocation" x="-61" y="60"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back.jpeg" width="150" height="113"/>
+        <image name="front.jpeg" width="150" height="96"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
@@ -72,6 +96,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="InfoButton:" candidateClass="UIButton"/>
+                <relationship kind="action" name="flipImage:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="statusText" candidateClass="UILabel"/>
             </relationships>
         </class>
