@@ -135,8 +135,6 @@
 		3D181D3A16B679340088159F /* digibike */ = {
 			isa = PBXGroup;
 			children = (
-				3D181D4316B679340088159F /* AppDelegate.h */,
-				3D181D4416B679340088159F /* AppDelegate.m */,
 				3D181D4C16B679340088159F /* MainStoryboard.storyboard */,
 				3D181D4F16B679340088159F /* ViewController.h */,
 				3D181D5016B679340088159F /* ViewController.m */,
@@ -148,6 +146,8 @@
 		3D181D3B16B679340088159F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D181D4316B679340088159F /* AppDelegate.h */,
+				3D181D4416B679340088159F /* AppDelegate.m */,
 				524D248716BB111600DE6CEC /* front.jpeg */,
 				524D248816BB111600DE6CEC /* back.jpeg */,
 				3D181D3C16B679340088159F /* digibike-Info.plist */,
