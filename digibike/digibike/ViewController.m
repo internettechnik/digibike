@@ -7,13 +7,21 @@
 //
 
 #import "ViewController.h"
-#import "Vehicles.h"
 #import "EBike.h"
 
 @interface ViewController ()
+// some private attributes:
+
+// Note: every property is "Zero-Initialized":
+@property (nonatomic) NSUInteger currentBikeNo;
+@property (strong, nonatomic)Vehicles *vehicles;
+
+-(void)updateStatusText;
 @end
 
 @implementation ViewController
+
+
 
 - (IBAction)flipImage:(UIButton *)bikeImageButton {
     /*if (!bikeImageButton.selected){
@@ -22,26 +30,31 @@
         bikeImageButton.selected=NO;
     }*/
     bikeImageButton.selected = !bikeImageButton.selected;
+    self.currentBikeNo++;
+    [self updateStatusText];
 }
 
 
 @synthesize statusText = _statusText;
+
+@synthesize vehicles = _vehicles;
+- (Vehicles *)vehicles
+{
+    if (!_vehicles) _vehicles= [[Vehicles alloc] init];
+    return _vehicles;
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
     // Do any additional setup after loading the view, typically from a nib.
-    EBike *ebike;
-    ebike = [[EBike alloc] initEBikeWithName: @"Maxi-Super"];
-    self.statusText.text =  [NSString stringWithFormat:@"I like my %@!" ,ebike.name];
-    NSLog( @"We loaded view, and so we just created another bike named '%@'",ebike.name );
+    NSLog( @"We loaded view and we create Vehicles (=list of bikes)");
+
+    [self.vehicles addSomeDemoBikes];
+    [self updateStatusText];
     
-    Vehicles *vehicles;
-    vehicles = [[Vehicles alloc] init];
-    [vehicles addEBike: ebike];
-    EBike *e = [vehicles selectDefaultBike];
-    NSLog( @"We added bike '%@' to our list of vehicles.",e.name );
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,5 +75,11 @@
     [alert show];
     
     
+}
+-(void)updateStatusText{
+    EBike *e = [self.vehicles selectBikeWith:self.currentBikeNo];
+    NSLog( @"We display %d. bike '%@' of our list of vehicles.",self.currentBikeNo,e.name );
+    self.statusText.text =
+    [NSString stringWithFormat:@"I like my %@!" ,e.name];
 }
 @end

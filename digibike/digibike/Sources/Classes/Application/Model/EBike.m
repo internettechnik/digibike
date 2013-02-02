@@ -19,7 +19,7 @@
     // first we call init from the base class NSObject
     self = [super init];
 	
-	if( self )
+	if( self ) // not beautiful, but "standard"
 	{
 		if( theEBikeName )
 		{
@@ -44,8 +44,9 @@
 //@synthesize speed = _speed;
 
 
-@synthesize name = _name; // needed if we provide "better" getter and setters:
-/* so following is internally generated:
+/*
+// needed if we provide "better" getter and setters:
+@synthesize name = _name; // so following is internally generated (if YOU do not provide it):
 -(NSString *)name
 {
     return _name;

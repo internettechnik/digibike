@@ -43,16 +43,27 @@ EBike *ebike;
     [vehicles addEBike: ebike];
     [vehicles addEBike: ebike];
     NSLog(@"%@",vehicles.info);
-    STAssertEquals(vehicles.count,2, @"we expect two bikes in vehicles-list.");
+    STAssertEquals(vehicles.count,2U, @"we expect two bikes in vehicles-list.");
     
     // we add another three bikes:
     for (NSUInteger i=1; i <= 3; i++){
         EBike *newBike = [[EBike alloc] init];
         [vehicles addEBike:newBike];
     }
-    STAssertEquals(vehicles.count,5, @"we expect five bikes in vehicles-list.");
+    STAssertEquals(vehicles.count,5U, @"we expect five bikes in vehicles-list.");
 }
 
+-(void)testSpecificBike
+{
+    // no bikes inserted into vehicles
+    EBike *e = [vehicles selectBikeWith:1U];
+    STAssertNil(e, @"Could get a ebike out of EMPTY vehicles?");
+    
+    // add a bike to vehicles (list of bikes)
+    [vehicles addEBike: ebike];
+    e = [vehicles selectBikeWith:1U];
+    STAssertNotNil(e, @"Could not get a ebike out of vehicles.");
+}
 
 - (void)tearDown
 {

@@ -10,11 +10,13 @@
 
 
 @interface Vehicles()
+// some additional "private, internal attributes or methods" 
 @property (strong, nonatomic) NSMutableArray *allTheBikes;
+
 @end
 
-@implementation Vehicles
 
+@implementation Vehicles
 
 // the property allTheBikes would always be nil
 // (never, ever generated). So we need
@@ -37,7 +39,14 @@
     return [self.allTheBikes lastObject];
 };
 
--(int) count
+-(EBike *) selectBikeWith: (NSUInteger)bikeNo
+{
+    if (self.count==0) return nil;
+    bikeNo= bikeNo%self.count;
+    return [self.allTheBikes objectAtIndex:bikeNo];
+};
+
+-(NSUInteger) count
 {
     return self.allTheBikes.count;
 };
@@ -47,5 +56,12 @@
     return [NSString stringWithFormat:@"%d vehicles available.", self.allTheBikes.count];
 };
 
+- (void)addSomeDemoBikes{
+    EBike *ebike;
+    ebike = [[EBike alloc] initEBikeWithName: @"Maxi-Super"];
+    [self addEBike: ebike];
+    ebike = [[EBike alloc] initEBikeWithName: @"Mega-Racer"];
+    [self addEBike: ebike];
+}
 
 @end

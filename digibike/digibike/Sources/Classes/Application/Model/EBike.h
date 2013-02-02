@@ -14,25 +14,26 @@
 @interface EBike : NSObject
 
 
-// which attributes (properties) has such an EBike?
+// which (public) attributes (properties) has such an EBike?
 
 
 // public property (we have getter and setter)
 //     (nonatomic = not thread safe)
+//     (strong = remove from MEMORY if
+//               no more pointers/references to this object available)
 @property (strong, nonatomic) NSString *name;
 @property (nonatomic) int speed;
 @property (nonatomic, getter=isBroken) BOOL broken; // some bikes might be broken (defect)
 
 
 // Note: minus "-" for normal instance/object methods
-//       plus  "+" for class methods
+//       plus  "+" for class methods (helpers, tools,...)
 
 // how to init a bike on creation (=when creating a NEW object)
 - (id) initEBikeWithName:(NSString *)theEBikeName;
 
 
-
-// how does it behave?
+// how does it behave? (public methods)
 - (void)startTheBike:(int) speed;
 
 @end

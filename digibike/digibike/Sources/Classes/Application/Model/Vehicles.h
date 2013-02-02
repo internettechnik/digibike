@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "EBike.h"
 
+// find the "public behaviour" here:
 
 @interface Vehicles : NSObject
 
 -(void)addEBike: (EBike *)bike;
 -(EBike *) selectDefaultBike;
--(int) count;
+-(EBike *) selectBikeWith: (NSUInteger)bikeNo;
+-(NSUInteger) count;
 -(NSString *) info;
+
+- (void)addSomeDemoBikes;
+
 @end
