@@ -61,12 +61,11 @@ EBike *ebike;
 
 // test properties "speed" and "broken"
 -(void)testSpeedAndBrokenProperty{
-    ebike.speed=4U;
     ebike.broken=NO;
-    [ebike startTheBike:11U];
+    [ebike startTheBikeWithSpeed:11U];
     STAssertEquals(ebike.speed, 11U, @"we expect this bike to be running with the speed given at startTheBike!");
     STAssertEquals(ebike.isBroken, NO, @"we expect this bike to be ok");
-    [ebike startTheBike:133U]; 
+    [ebike startTheBikeWithSpeed:133U]; 
     STAssertEquals(ebike.speed, 130U, @"we expect the bike to run max 130 km/h!");
 }
 

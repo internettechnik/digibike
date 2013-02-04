@@ -10,9 +10,19 @@
 #import "EBike.h"
 
 
+// the PRIVATE implementation:
+@interface EBike()
+// public we had: readonly, private we want write also!
+@property (readwrite, nonatomic) NSUInteger speed;
+@end
+
 @implementation EBike
+
+
 // we implement additional ways to create a new bike:
+//      called: a (an optional) "convenience initializer"
 // (the default "init" would still work)
+//      called "the designated initializer" 
 // return "id" (means: return object of any class)
 - (id) initEBikeWithName:(NSString *)theEBikeName{
     // first we call init from the base class NSObject
@@ -28,6 +38,8 @@
     } // if
     return self;
 } // init
+
+
 
 
 // we implement the available properties/attributes of our bike:
@@ -53,7 +65,7 @@
  */
 
 // we implement the internal behavior of the bike now:
-- (void)startTheBike:(NSUInteger) speed{
+- (void)startTheBikeWithSpeed:(NSUInteger) speed{
     if (speed <= [EBike maxSpeed]) {
         _speed = speed;
     }else{
@@ -62,6 +74,10 @@
     NSLog(@"YEAH - we are at driving at speed %d",speed);
 };
 
+// overwrite the default "as Text" represenation
+- (NSString *)description{
+    return [NSString stringWithFormat:@"Bike %@ (current speed = %d km/h)",self.name, self.speed];
+}
 + (NSUInteger)maxSpeed{
     return 130; // sorry, that's top speed for Austria
 };

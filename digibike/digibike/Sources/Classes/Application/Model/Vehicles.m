@@ -65,6 +65,9 @@
     [self addEBike: ebike];
     ebike = [[EBike alloc] initEBikeWithName: @"Mega-Racer"];
     [self addEBike: ebike];
+    ebike = [[EBike alloc] initEBikeWithName: @"Black-Puch"];
+    [ebike startTheBikeWithSpeed:5U];
+    [self addEBike: ebike];
     for (EBike *b in self.allTheBikes) {
         NSLog(@" => created '%@'",b);
     }
