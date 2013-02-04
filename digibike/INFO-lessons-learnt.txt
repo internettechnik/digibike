@@ -1,9 +1,11 @@
 Naming
     variables: starting lowercase, then CamelCase
+        e.g.: self.maxSpeed
     methods: readable english method names
     classes: camel-case
     internal for getter/setter
-        start with underscore _
+        instance-variables for getter/setter with underscore "_"
+        start with underscore _: e.g. self.speed
 
 Objective-C
     Object Orientation:
@@ -13,18 +15,30 @@ Objective-C
     NSArray always holds STRONG pointers to its objects
     we use "lazy instantiation"
         e.g. if (!_bikes) _bikes = [[NSMutableArray alloc] init];
+    for-each-loops:
+        e.g.: for (EBike *b in self.allTheBikes)
+    optional:
+        maybe use C "static" keyword 
+            (lifetime of variable = lifetime of program)
+            (and visible only in the current file)
 
 GUI
     always use storyboard nowadays
-    
+    Use Autolayout for layout of iPhone 4 AND iPhone5 at the same time
+    always set "weak" references for an outlet (e.g. UILabel) 
+        to the  (MVC already has a strong reference!)
+        e.g.: @property (weak, nonatomic) IBOutlet UILabel *statusText;
+        
 XCode Development / Objective-C Specific / History
     Always use ARC Automatic Reference Counting nowadays
     AppDelegate (former time kind of "for global variables" rarely used anymore
-
+    NSLog()
+    @synthesize speed = _speed // only if writing getter AND setter on your own!
+    
 XCode - IDE Tipps:
     ALT for help on methods
     use REFACTOR/RENAME to change method names or so
-    
+    split view and select "automatic" matching right editor-window
 
 NOT-SO-FINE / Ideas:
     Unit-Test-Output should be color-coded (red for problems, gray for NSLog, ...)
@@ -41,10 +55,19 @@ Useful things to know
     -method
     +method
     NSString: 
-        stringWithFormat
+        [[NSString alloc] initWithFormat:@"%d vehicles available.", 6]
+        [NSString stringWithFormat:@"%d vehicles available.", 6]; // shorter!
     NSArray:
         @[] is[[NSArrayalloc]initWithObjects:...]
         self.allTheBikes[bikeNo]; // shorter than objectAtIndex
     NSUInteger for counters and "small" positive numbers
+    bool: YES, NO
     Helper-Functions:
         arc4random()
+        
+    (IBAction), (IBOutlet),... just for the IDE to know about
+        e.g.: - (IBAction)InfoButton:(UIButton *)sender;
+    UIButton, UISlider,... classes of widgets for the graphical interface
+        e.g.: - (IBAction)InfoButton:(UIButton *)sender;
+              ... sender.isSelected ...
+    

@@ -13,13 +13,12 @@
 @implementation EBike
 // we implement additional ways to create a new bike:
 // (the default "init" would still work)
-
+// return "id" (means: return object of any class)
 - (id) initEBikeWithName:(NSString *)theEBikeName{
     // first we call init from the base class NSObject
     self = [super init];
 	
-	if( self ) // not beautiful, but "standard"
-	{
+	if( self ){ // self could be "nil". Not beautiful, but "standard"
 		if( theEBikeName ){
             NSLog( @"We create a bike with name %@",theEBikeName );
             self.name = theEBikeName;
