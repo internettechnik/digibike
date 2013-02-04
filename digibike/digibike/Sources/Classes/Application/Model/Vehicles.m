@@ -12,7 +12,7 @@
 @interface Vehicles()
 // some additional "private, internal attributes or methods" 
 @property (strong, nonatomic) NSMutableArray *allTheBikes;
-
+@property (nonatomic) NSUInteger speed;
 @end
 
 
@@ -40,7 +40,15 @@
     if (self.count==0)
         return nil;
     bikeNo= bikeNo%self.count;
-    return [self.allTheBikes objectAtIndex:bikeNo];
+    //return [self.allTheBikes objectAtIndex:bikeNo];
+    return self.allTheBikes[bikeNo]; // shorter than objectAtIndex
+};
+
+-(EBike *) selectRandomBike{
+    if (self.count==0)
+        return nil;
+    NSUInteger bikeNo = arc4random() % self.count;
+    return self.allTheBikes[bikeNo]; // shorter than objectAtIndex
 };
 
 -(NSUInteger) count{

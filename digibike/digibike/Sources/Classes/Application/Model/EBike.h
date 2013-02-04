@@ -22,7 +22,7 @@
 //     (strong = remove from MEMORY (always the heap, never the stack) if
 //               no more pointers/references to this object available)
 @property (strong, nonatomic) NSString *name;
-@property (nonatomic) int speed;
+@property (nonatomic) NSUInteger speed;
 @property (nonatomic, getter=isBroken) BOOL broken; // some bikes might be broken (defect)
 
 
@@ -34,6 +34,9 @@
 
 
 // how does it behave? (public methods)
-- (void)startTheBike:(int) speed;
+- (void)startTheBike:(NSUInteger) speed;
 
+// for all object the same: maximum speed of ANY bike
+// class method (+)
++ (NSUInteger)maxSpeed;
 @end

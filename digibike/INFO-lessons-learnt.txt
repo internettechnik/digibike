@@ -28,3 +28,23 @@ XCode - IDE Tipps:
 
 NOT-SO-FINE / Ideas:
     Unit-Test-Output should be color-coded (red for problems, gray for NSLog, ...)
+    
+    
+Useful things to know
+    #import
+    @interface
+    @implementation
+    @property
+        (strong
+         nonatomic)
+    self
+    -method
+    +method
+    NSString: 
+        stringWithFormat
+    NSArray:
+        @[] is[[NSArrayalloc]initWithObjects:...]
+        self.allTheBikes[bikeNo]; // shorter than objectAtIndex
+    NSUInteger for counters and "small" positive numbers
+    Helper-Functions:
+        arc4random()

@@ -11,7 +11,6 @@
 
 
 @implementation EBike
-
 // we implement additional ways to create a new bike:
 // (the default "init" would still work)
 
@@ -42,7 +41,7 @@
 
 
 /*
-// needed if we provide "better" getter and setters:
+// needed if we provide "better" (BOTH) the getter and setters ourselves:
 @synthesize name = _name; // so following is internally generated (if YOU do not provide it):
 -(NSString *)name
 {
@@ -55,8 +54,16 @@
  */
 
 // we implement the internal behavior of the bike now:
-- (void)startTheBike:(int) speed{
+- (void)startTheBike:(NSUInteger) speed{
+    if (speed <= [EBike maxSpeed]) {
+        _speed = speed;
+    }else{
+        _speed = EBike.maxSpeed;
+    }
     NSLog(@"YEAH - we are at driving at speed %d",speed);
-    _speed = speed;
+};
+
++ (NSUInteger)maxSpeed{
+    return 130; // sorry, that's top speed for Austria
 };
 @end
