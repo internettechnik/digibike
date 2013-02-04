@@ -1,0 +1,29 @@
+Naming
+    variables: starting lowercase, then CamelCase
+    methods: readable english method names
+    classes: camel-case
+    internal for getter/setter
+        start with underscore _
+
+Object Orientation
+    we send "messages to objects"
+    
+Objective-C
+    look out comparison of "Mutable" or not Mutable
+        e.g.: NSMutableString, NSMutableArray
+    NSArray always holds STRONG pointers to its objects
+
+GUI
+    always use storyboard nowadays
+    
+XCode Development / Objective-C Specific / History
+    Always use ARC Automatic Reference Counting nowadays
+    AppDelegate (former time kind of "for global variables" rarely used anymore
+
+XCode - IDE Tipps:
+    ALT for help on methods
+    use REFACTOR/RENAME to change method names or so
+    
+
+NOT-SO-FINE / Ideas:
+    Unit-Test-Output should be color-coded (red for problems, gray for NSLog, ...)

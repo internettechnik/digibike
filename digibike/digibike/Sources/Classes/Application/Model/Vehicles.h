@@ -15,7 +15,7 @@
 
 -(void)addEBike: (EBike *)bike;
 -(EBike *) selectDefaultBike;
--(EBike *) selectBikeWith: (NSUInteger)bikeNo;
+-(EBike *) selectBikeWithNo: (NSUInteger)bikeNo;
 -(NSUInteger) count;
 -(NSString *) info;
 

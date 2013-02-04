@@ -29,6 +29,7 @@
 		523CE3F716BB0322002F0289 /* vehiclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523CE3F616BB0322002F0289 /* vehiclesTests.m */; };
 		524D248916BB111600DE6CEC /* front.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 524D248716BB111600DE6CEC /* front.jpeg */; };
 		524D248A16BB111600DE6CEC /* back.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 524D248816BB111600DE6CEC /* back.jpeg */; };
+		527021C416BF93BF008FECD9 /* INFO-lessons-learnt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 527021C316BF93BF008FECD9 /* INFO-lessons-learnt.txt */; };
 		5289CEA816B880FF00AF5D4D /* EBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 5289CEA716B880FF00AF5D4D /* EBike.m */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		523CE3F616BB0322002F0289 /* vehiclesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vehiclesTests.m; path = digibikeTests/vehiclesTests.m; sourceTree = SOURCE_ROOT; };
 		524D248716BB111600DE6CEC /* front.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpeg; sourceTree = "<group>"; };
 		524D248816BB111600DE6CEC /* back.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpeg; sourceTree = "<group>"; };
+		527021C316BF93BF008FECD9 /* INFO-lessons-learnt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "INFO-lessons-learnt.txt"; sourceTree = "<group>"; };
 		5289CEA616B880FF00AF5D4D /* EBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBike.h; sourceTree = "<group>"; };
 		5289CEA716B880FF00AF5D4D /* EBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBike.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 		3D181D2516B679340088159F = {
 			isa = PBXGroup;
 			children = (
+				527021C316BF93BF008FECD9 /* INFO-lessons-learnt.txt */,
 				5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */,
 				3D181D3A16B679340088159F /* digibike */,
 				3D181D5E16B679340088159F /* digibikeTests */,
@@ -291,6 +294,7 @@
 				5210B0CB16B6BB610096F7B6 /* CHANGELOG.txt in Resources */,
 				524D248916BB111600DE6CEC /* front.jpeg in Resources */,
 				524D248A16BB111600DE6CEC /* back.jpeg in Resources */,
+				527021C416BF93BF008FECD9 /* INFO-lessons-learnt.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

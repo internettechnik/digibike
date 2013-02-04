@@ -21,13 +21,10 @@
 	
 	if( self ) // not beautiful, but "standard"
 	{
-		if( theEBikeName )
-		{
+		if( theEBikeName ){
             NSLog( @"We create a bike with name %@",theEBikeName );
             self.name = theEBikeName;
-        }
-        else
-		{
+        }else{
 			NSLog( @">> ERROR: we need a name for the bike!" );
 		} // else
     } // if
@@ -58,8 +55,7 @@
  */
 
 // we implement the internal behavior of the bike now:
-- (void)startTheBike:(int) speed
-{
+- (void)startTheBike:(int) speed{
     NSLog(@"YEAH - we are at driving at speed %d",speed);
     _speed = speed;
 };

@@ -38,15 +38,14 @@
 @synthesize statusText = _statusText;
 
 @synthesize vehicles = _vehicles;
-- (Vehicles *)vehicles
-{
-    if (!_vehicles) _vehicles= [[Vehicles alloc] init];
+- (Vehicles *)vehicles{
+    if (!_vehicles)
+        _vehicles= [[Vehicles alloc] init];
     return _vehicles;
 }
 
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
 	
     // Do any additional setup after loading the view, typically from a nib.
@@ -57,8 +56,7 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -77,7 +75,7 @@
     
 }
 -(void)updateStatusText{
-    EBike *e = [self.vehicles selectBikeWith:self.currentBikeNo];
+    EBike *e = [self.vehicles selectBikeWithNo:self.currentBikeNo];
     NSLog( @"We display %d. bike '%@' of our list of vehicles.",self.currentBikeNo,e.name );
     self.statusText.text =
     [NSString stringWithFormat:@"I like my %@!" ,e.name];

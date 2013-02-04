@@ -19,7 +19,7 @@
 
 // public property (we have getter and setter)
 //     (nonatomic = not thread safe)
-//     (strong = remove from MEMORY if
+//     (strong = remove from MEMORY (always the heap, never the stack) if
 //               no more pointers/references to this object available)
 @property (strong, nonatomic) NSString *name;
 @property (nonatomic) int speed;

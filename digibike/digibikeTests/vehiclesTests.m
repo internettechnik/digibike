@@ -27,8 +27,7 @@ EBike *ebike;
 
 
 // ok, let us run some unit-tests:
-- (void)testAddingEBikeToVehicles
-{
+- (void)testAddingEBikeToVehicles{
     // add a bike to vehicles (list of bikes)
     [vehicles addEBike: ebike];
     
@@ -37,8 +36,7 @@ EBike *ebike;
     STAssertNotNil(e, @"Could not get a ebike out of vehicles.");
 }
 
-- (void)testNumberOfBikesInVehicles
-{
+- (void)testNumberOfBikesInVehicles{
     // add a bike to vehicles (list of bikes)
     [vehicles addEBike: ebike];
     [vehicles addEBike: ebike];
@@ -53,20 +51,18 @@ EBike *ebike;
     STAssertEquals(vehicles.count,5U, @"we expect five bikes in vehicles-list.");
 }
 
--(void)testSpecificBike
-{
+-(void)testSpecificBike{
     // no bikes inserted into vehicles
-    EBike *e = [vehicles selectBikeWith:1U];
+    EBike *e = [vehicles selectBikeWithNo:1U];
     STAssertNil(e, @"Could get a ebike out of EMPTY vehicles?");
     
     // add a bike to vehicles (list of bikes)
     [vehicles addEBike: ebike];
-    e = [vehicles selectBikeWith:1U];
+    e = [vehicles selectBikeWithNo:1U];
     STAssertNotNil(e, @"Could not get a ebike out of vehicles.");
 }
 
-- (void)tearDown
-{
+- (void)tearDown{
     ebike=nil;
     vehicles = nil;
     [super tearDown];

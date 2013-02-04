@@ -21,38 +21,33 @@
 // the property allTheBikes would always be nil
 // (never, ever generated). So we need
 // "lazy evaluation" to create an (empty) list on demand:
-- (NSMutableArray *)allTheBikes
-{
+- (NSMutableArray *)allTheBikes{
     if (!_allTheBikes) _allTheBikes = [[NSMutableArray alloc] init];
     return _allTheBikes;
 }
 
--(void)addEBike: (EBike *)bike
-{
+-(void)addEBike: (EBike *)bike{
     // ok, we add the bike to our internal 'list' named "allTheBikes"
     [self.allTheBikes addObject:bike];
 }
 
--(EBike *) selectDefaultBike
-{
+-(EBike *) selectDefaultBike{
     // let say the last bike is the default one:
     return [self.allTheBikes lastObject];
 };
 
--(EBike *) selectBikeWith: (NSUInteger)bikeNo
-{
-    if (self.count==0) return nil;
+-(EBike *) selectBikeWithNo: (NSUInteger)bikeNo{
+    if (self.count==0)
+        return nil;
     bikeNo= bikeNo%self.count;
     return [self.allTheBikes objectAtIndex:bikeNo];
 };
 
--(NSUInteger) count
-{
+-(NSUInteger) count{
     return self.allTheBikes.count;
 };
 
--(NSString *) info
-{
+-(NSString *) info{
     return [NSString stringWithFormat:@"%d vehicles available.", self.allTheBikes.count];
 };
 

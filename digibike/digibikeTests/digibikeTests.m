@@ -12,8 +12,7 @@
 
 EBike *ebike;
 
-- (void)setUp
-{
+- (void)setUp{
     [super setUp];
     
     // Set-up some demo data to test....
@@ -26,8 +25,7 @@ EBike *ebike;
     STAssertNotNil(ebike, @"Could not create ebike.");
 }
 
-- (void)tearDown
-{
+- (void)tearDown{
     // Tear-down code here.
     NSLog( @"Tests done..." );
     [super tearDown];
@@ -35,8 +33,7 @@ EBike *ebike;
 
 
 // ok, let us run some unit-tests:
-- (void)testTheNewEBike
-{
+- (void)testTheNewEBike{
     NSLog( @"First test: is the object here?" );
     STAssertTrue(ebike != Nil, @"hu, an ebike has to exist!");
     
@@ -48,8 +45,7 @@ EBike *ebike;
 }
 
 // now we test our custom init - method (the special "constructor")
--(void)testAnotherEBike
-{
+-(void)testAnotherEBike{
     // a new variable: pointer to an object (of type "EBike")
     EBike *maxiBike;
     
@@ -64,8 +60,7 @@ EBike *ebike;
 }
 
 // test properties "speed" and "broken"
--(void)testSpeedAndBrokenProperty
-{
+-(void)testSpeedAndBrokenProperty{
     ebike.speed=4;
     ebike.broken=NO;
     [ebike startTheBike:11];
