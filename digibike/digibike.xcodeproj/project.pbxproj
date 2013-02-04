@@ -103,7 +103,6 @@
 		3D181D2516B679340088159F = {
 			isa = PBXGroup;
 			children = (
-				5289CEA016B8806800AF5D4D /* Sources */,
 				5210B0CA16B6BB610096F7B6 /* CHANGELOG.txt */,
 				3D181D3A16B679340088159F /* digibike */,
 				3D181D5E16B679340088159F /* digibikeTests */,
@@ -135,6 +134,9 @@
 		3D181D3A16B679340088159F /* digibike */ = {
 			isa = PBXGroup;
 			children = (
+				5289CEA516B8808A00AF5D4D /* View */,
+				5289CEA416B8808A00AF5D4D /* Controller */,
+				5289CEA316B8806800AF5D4D /* Model */,
 				3D181D4C16B679340088159F /* MainStoryboard.storyboard */,
 				3D181D4F16B679340088159F /* ViewController.h */,
 				3D181D5016B679340088159F /* ViewController.m */,
@@ -182,33 +184,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5289CEA016B8806800AF5D4D /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				5289CEA116B8806800AF5D4D /* Classes */,
-			);
-			name = Sources;
-			path = digibike/Sources;
-			sourceTree = "<group>";
-		};
-		5289CEA116B8806800AF5D4D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				5289CEA216B8806800AF5D4D /* Application */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		5289CEA216B8806800AF5D4D /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				5289CEA516B8808A00AF5D4D /* View */,
-				5289CEA416B8808A00AF5D4D /* Controller */,
-				5289CEA316B8806800AF5D4D /* Model */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		5289CEA316B8806800AF5D4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +192,8 @@
 				523CE3F116BAFC57002F0289 /* Vehicles.h */,
 				523CE3F216BAFC57002F0289 /* Vehicles.m */,
 			);
-			path = Model;
+			name = Model;
+			path = Sources/Classes/Application/Model;
 			sourceTree = "<group>";
 		};
 		5289CEA416B8808A00AF5D4D /* Controller */ = {
@@ -225,7 +201,7 @@
 			children = (
 			);
 			name = Controller;
-			path = Model/Controller;
+			path = Sources/Classes/Application/Model/Controller;
 			sourceTree = "<group>";
 		};
 		5289CEA516B8808A00AF5D4D /* View */ = {
@@ -233,7 +209,7 @@
 			children = (
 			);
 			name = View;
-			path = Model/View;
+			path = Sources/Classes/Application/Model/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
