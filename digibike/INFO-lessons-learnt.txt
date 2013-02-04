@@ -5,13 +5,14 @@ Naming
     internal for getter/setter
         start with underscore _
 
-Object Orientation
-    we send "messages to objects"
-    
 Objective-C
+    Object Orientation:
+        we send "messages to objects"
     look out comparison of "Mutable" or not Mutable
         e.g.: NSMutableString, NSMutableArray
     NSArray always holds STRONG pointers to its objects
+    we use "lazy instantiation"
+        e.g. if (!_bikes) _bikes = [[NSMutableArray alloc] init];
 
 GUI
     always use storyboard nowadays
