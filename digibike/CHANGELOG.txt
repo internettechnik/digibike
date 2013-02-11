@@ -1,5 +1,8 @@
 CHANGELOG:
 
+2013-02-11 added more scenes to the storyboard
+    drag out the tab-view controller name it "SettingsViewController"
+    and reset the application-start view...
 
 2013-01-29 We invent an EBike :)
     create some structure for an app
